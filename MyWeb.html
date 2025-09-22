@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蔡尚澔 - Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        background: #0077cc;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 2rem;
+        max-width: 900px;
+        margin: auto;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .project {
+        background: white;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #eee;
+        margin-top: 2rem;
+      }
+      .dark-mode {
+        background: #222;
+        color: #eee;
+      }
+      .dark-mode header {
+        background: #444;
+      }
+      .dark-mode footer {
+        background: #333;
+      }
+      button {
+        background: #0077cc;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>蔡尚澔</h1>
+      <p>Aspiring CS Double Major | Passionate about Coding</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        你好！我是 [你的名字]，目前就讀於
+        [你的學校主修科系]，對於電腦科學有濃厚的興趣，正在申請資工雙主修。喜歡挑戰程式設計、演算法與資料應用，希望能將數理背景結合程式能力，未來投入
+        [你的目標方向，如 AI、軟體工程]。
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>排序演算法視覺化</h3>
+        <p>用 JavaScript 實作 Bubble Sort，並加上動畫展示排序過程。</p>
+        <a href="https://github.com/你的帳號/排序專案" target="_blank"
+          >GitHub 連結</a
+        >
+      </div>
+
+      <div class="project">
+        <h3>簡單小遊戲 - 貪吃蛇</h3>
+        <p>用原生 JavaScript 製作的貪吃蛇遊戲，可以在網頁上直接玩。</p>
+        <a href="https://github.com/你的帳號/貪吃蛇" target="_blank"
+          >GitHub 連結</a
+        >
+      </div>
+
+      <div class="project">
+        <h3>AI 嘗試 - 手寫數字辨識</h3>
+        <p>
+          利用 Python + sklearn 訓練模型，預測 MNIST
+          手寫數字，並將結果用圖表展示。
+        </p>
+        <a href="https://github.com/你的帳號/手寫數字" target="_blank"
+          >GitHub 連結</a
+        >
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 Email: <a href="mailto:你的信箱">你的信箱</a></p>
+      <p>
+        💻 GitHub:
+        <a href="https://github.com/你的帳號" target="_blank"
+          >github.com/你的帳號</a
+        >
+      </p>
+      <p>
+        🔗 LinkedIn:
+        <a href="https://linkedin.com/in/你的帳號" target="_blank"
+          >linkedin.com/in/你的帳號</a
+        >
+      </p>
+      <p><a href="resume.pdf" download>📄 下載我的履歷</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 你的名字 | Built with ❤️ and HTML/CSS/JS</p>
+    </footer>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
